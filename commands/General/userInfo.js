@@ -12,7 +12,15 @@ module.exports = {
     await interaction.deferReply();
     const { options } = interaction;
     const user = options.getUser("유저") || interaction.user;
-    console.log(user)
+    const _user = await interaction.client.users.fetch(user.id, {
+      force: true,
+    });
+    
+    const user_banner = _user.bannerURL({
+      size: 512,
+    }); 
+    
+    console.log(_user)
     if (!user) return;
     const embed = createUserInfo(user);
     interaction.editReply({ embeds: [embed] });

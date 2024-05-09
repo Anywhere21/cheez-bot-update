@@ -17,13 +17,13 @@ const badges = {
   ApplicationCommands: "명령어 지원 ",
 };
 
-
 function createUserInfo(user, guild) {
 
   //presence.activities // 활동들
   //presence.clientStatus // 폰, 컴, 웹 에서의 온라인 여부
 
   let bot = user.bot ? "봇입니다." : "봇이 아닙니다.";
+
 
   const userFlags = user.flags.toArray();
   const timestamp = Math.floor(user.createdTimestamp / 1000);
