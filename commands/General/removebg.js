@@ -13,7 +13,7 @@ module.exports = {
         const response = await fetch('https://api.remove.bg/v1.0/removebg', {
             method: 'POST',
             headers: {
-                'X-API-Key': '6091-18F26091-18F2',
+                'X-API-Key': '',
                 'Content-Type': 'application/json'
             },
 
