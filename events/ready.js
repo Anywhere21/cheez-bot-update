@@ -21,7 +21,7 @@ module.exports = {
           "1117817234077786153"
           );
   
-      start_channel.send({embeds: [embed]});
+      /*start_channel.send({embeds: [embed]});*/
         
         }
 }

@@ -14,16 +14,16 @@ const badges = {
   VerifiedBot: "<:Verified_Bot1:1102103932551049389><:Verified_Bot2:1102103929396936754> ",
   VerifiedDeveloper: "<:Verified_Developer:1096705237986856981> ",
   ActiveDeveloper: "<:Active_Developer:1096704682329645076> ",
-  ApplicationCommands: "명령어 지원 ",
+  ApplicationCommandBadge: "명령어 지원 ",
+  ApplicationAutoModerationRuleCreateBadge: "AutoMod"
 };
 
-function createUserInfo(user, guild) {
+function createUserInfo(user) {
 
   //presence.activities // 활동들
   //presence.clientStatus // 폰, 컴, 웹 에서의 온라인 여부
 
   let bot = user.bot ? "봇입니다." : "봇이 아닙니다.";
-
 
   const userFlags = user.flags.toArray();
   const timestamp = Math.floor(user.createdTimestamp / 1000);

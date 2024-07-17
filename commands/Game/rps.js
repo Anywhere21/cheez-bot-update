@@ -54,8 +54,8 @@ module.exports = {
             rejectMessage: '{opponent}님이 **가위바위보** 대결 신청을 거절했어요.',
             pickMessage: '{emoji}를 선택했어요.',
             winMessage: '{player}님이 이겼습니다!',
-            tieMessage: `무승부! ${player}님과 {opponent}, 둘다 같은걸 선택하셨네요.`,
-            timeoutMessage: '시간 내에 응하지 않아 게임이 종료되었습니다.',
+            tieMessage: `무승부! ${player}님과 {opponent}, 둘 다 같은걸 선택했어요.`,
+            timeoutMessage: '시간 내에 응답하지 않아 게임이 종료되었습니다.',
             playerOnlyMessage: '{player}과 {opponent}만 버튼을 누를 수 있습니다.',
             reqTimeoutMessage: '시간 내에 응답하지 않아 게임이 취소되었습니다.'
     

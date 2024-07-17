@@ -13,15 +13,7 @@ module.exports = {
     async execute(interaction){
         await interaction.deferReply();
         const user = interaction.targetUser;
-        const _user = await interaction.client.users.fetch(user.id, {
-            force: true,
-          });
-          
-          const user_banner = _user.bannerURL({
-            size: 512,
-          }); 
-          
-        console.log(_user);
+        console.log(user);
         const embed = createUserInfo(user);
         interaction.editReply({embeds: [embed] });
     },
